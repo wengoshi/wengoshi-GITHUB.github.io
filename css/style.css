@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{font-family: "方正兰亭纤黑"; src:url(../fonts/%E6%96%B9%E6%AD%A3%E5%85%B0%E4%BA%AD%E7%BA%A4%E9%BB%91.ttf)}
+@font-face{font-family: "方正兰亭中粗黑_GBK"; src:url(../fonts/%E6%96%B9%E6%AD%A3%E5%85%B0%E4%BA%AD%E4%B8%AD%E7%B2%97%E9%BB%91%E7%AE%80%E4%BD%93.TTF)}
+
+/*首页*/
+.p5{
+	font-family: "方正兰亭纤黑简体";
+	font-size: 18px;
+}
+
+/*简介*/
+#jianjie1{
+	margin: 0 auto;
+	width: 200px;
+	
+	font-family: "方正兰亭中粗黑_GBK";
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#jianjie2{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	font-family: "方正兰亭纤黑简体";
+	font-size: 24px;
+	line-height: 30px;
+}
+
+#part1{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.span1{
+	font-family: "方正兰亭纤黑简体";
+	font-size: 28px;
+}
+.hr1{
+	height:3px;
+	border:none;
+	border-top:3px double black;
+}
+.hr2{
+	width: 840px;
+	border:none;
+	border-top:0.5px double #c1c1c1;
+	margin-left: 360px;
+}
+h2{
+	font-family: "方正兰亭中粗黑_GBK";
+	font-size: 40px;
+	text-align: center;
+}
+h3{
+	font-family: "方正兰亭中粗黑_GBK";
+	font-size: 30px;
+	text-align: center;
+}
+/*第一个p的样式(正文）*/
+.p1{
+	font-family: "方正兰亭纤黑简体";
+	font-size: 24px;
+	padding-left: 70px;
+	padding-right: 70px;
+	text-align: justify;
+}
+/*第二个p的样式（数据来源）*/
+.p2{
+	color: #7C7C7C;
+	font-family: "方正兰亭纤黑简体";
+	font-size: 14px;
+	text-align: right;
+	line-height: 25px;
+}
+.p3{
+	font-family: "方正兰亭中粗黑_GBK";
+	font-size: 30px;
+	text-align: center;
+}
+.img1{
+	padding-left: 250px;
+}
+
+#part2{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+#main{
+	font-family: "方正兰亭纤黑简体";
+	font-size: 28px;
+	margin: 0 auto;
+}
+#main3{
+	font-family: "方正兰亭纤黑简体";
+	font-size: 28px;
+	margin: 0 auto;
+}
+#part3{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+#img2{
+	
+	padding-left: 80px;
+}
+
+/*工作时期*/
+#part4{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*尾部*/
+#weibu{
+	width:  auto;
+	height: auto;
+	margin: 0 auto;
+	background-color: #f4f5ef;
+	font-family: "方正兰亭纤黑简体";
+	font-size: 24px;
+	line-height: 32px;
+}
+.footer1{
+	width: 600px;
+	height: auto;
+	margin:0 auto;
+}
+
+.part4{
+	float: left;
+}
+
+/**婚姻**/
+#part5{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.part5{
+	float: left;
+}
+/**退休**/
+#part6{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+
+.p4{
+	color: #c1c1c1;
+	font-family: "方正兰亭纤黑简体";
+	font-size: 28px;
+	padding-left: 60px;
+	padding-right: 60px;
+	text-align: center;
+}

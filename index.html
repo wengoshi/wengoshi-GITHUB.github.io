@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>董小姐的故事</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/echarts.min.js"></script>
+
+<style type="text/css">
+body, html {height: 100%;}
+*{ margin:0; padding:0;list-style-type:none;}
+
+
+.main_content{ height:100%; position:relative; z-index:1;}
+.fixed_bg{ background-attachment:fixed;}
+.fixed_bg{ width:100%; background-position:center center; background-repeat:no-repeat; background-size:cover; min-height:100%; position:relative; z-index:1;}
+.bg_1{ background-image:url(img/08.jpg);}
+.bg_2{ background-image:url(img/1.jpg);}
+.bg_3{ background-image:url(img/2.jpg);}
+.bg_4{ background-image:url(img/3.jpg);}
+.bg_5{ background-image:url(img/4.jpg);}
+.bg_6{ background-image:url(img/5.jpg);}
+.bg_7{ background-image:url(img/6.jpg);}
+.bg_8{ background-image:url(img/8.jpg);}
+
+.scroll_bg{ height:auto; position:relative; z-index:2;}
+.color_1{ background-color:#f4f5ef; opacity:0.8;}
+.color_2{ background-color:#f4f5ef; opacity:0.8;}
+.color_3{ background-color:#f4f5ef; opacity:0.8;}
+.color_4{ background-color:#f4f5ef; opacity:0.8;}
+.color_5{ background-color:#f4f5ef; opacity:0.8;}
+.color_6{ background-color:#f4f5ef; opacity:0.8;}
+.color_7{ background-color:#f4f5ef; opacity:0.8;}
+.color_8{ background-color:#f4f5ef; opacity:0.8;}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="main_content">
+<!--简介-->
+	<div class="fixed_bg bg_1"></div>
+    <div class="scroll_bg color_1">
+    	<div id="jianjie1">
+    		<p>董小姐的故事</p>
+    	</div>
+    	<div id="jianjie2">
+	    <p>董小姐出生在北方某省的一个小县城，身高162厘米、体重50公斤、二本毕业、眼睛小小头发长长——总之，符合一切“普通女孩”的特征。但是，董小姐“普通”的一生绝不简单，就像每一个普通中国女性一样，她从出生就开始经历艰险。</p>
+       <br>
+       <br>
+        </div>
+    </div>
+   
+<!--胎儿-->
+    <div class="fixed_bg bg_2"></div>
+    
+    <div class="scroll_bg color_2">
+    	<div id="part1">
+	<div>
+	    <br>
+	    <br>
+	    <br>
+		<hr class="hr1">
+		<a name="胎儿时代"><h2>胎儿时期</h2></a>
+		<hr class="hr1">
+		<br>
+	    <br>
+		<p class="p1">当父亲带X染色体的精子进入了母亲的卵子的时候，董小姐的性别就已经被决定为“女”了。</p>
+	</div>
+	<div>
+	<img src="img/01.gif" width="1200px" height="600px"> 
+	</div>
+	
+	
+	<div>
+		<p class="p1">她面临的危险也从此开始......</p>
+		<br>
+		<br>
+		<img class="img1" src="img/tu1.png">
+		<img class="img1" src="img/tu2.png">
+	</div>
+	<br>
+	<br>
+	<br>
+	<div>
+		<h3>女胎死亡数<span class="span1">（单位：人）</span></h3>
+		<div id="main4" style="width: 1100px;height:300px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main4'));
+
+        // 指定图表的配置项和数据
+		option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['1990年', '2008年']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '6%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01]
+    },
+    yAxis: {
+        type: 'category',
+        data: ['2008年','1990年']
+    },
+    series: [
+        {
+            name: '女胎死亡数',
+            type: 'bar',
+            data: [1092000, 890000]
+        },
+        
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div>
+		<hr class="hr2">
+		<p class="p2">数据来源：2012年世界银行发展报告《性别平等对发展非常重要》<br>注意：计划生育于2002年9月1日起施行，我国在2016年1月1日开放二胎政策，所以此后计划生育就已不再是导致女胎死亡的主要原因。</p>
+	</div>
+	<br>
+	<p class="p1">董小姐的父母是镇里的小个体户，他们没忍住好奇心做了B超检测，想知道肚子里孩子的性别。当得知是个女孩时，他们多少有些失落，但思想不算太保守的他们并没有动把孩子打掉的心思。所以，董小姐就在一个夏天的夜晚降生了！</p>
+	<br>
+	<br>
+</div>
+</div>
+    
+<!--婴儿-->
+    <div class="fixed_bg bg_3"></div>
+    
+    <div class="scroll_bg color_3">
+        <div id="part2">
+	<div>
+	<br>
+	<br>
+	<br>
+		<hr class="hr1">
+		<h2>婴儿时期</h2>
+		<hr class="hr1">
+		<br>
+		<br>
+		<p class="p1">中国的古老迷信“针入大女体，下胎生男孩”——人们残杀女婴以祈求男婴的降生。</p>
+	</div>
+  
+   <br>
+   <br>
+    
+    <h3>婴儿死亡率<span class="span1">（单位：%）</span></h3>
+    <div id="main" style="width: 1200px;height:700px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        option = {
+    title: {
+        text: ''
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['','','女婴','男婴']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1960年','1970年','1981年','1989年','2000年','2010年']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+
+        {
+            name:'女婴',
+            type:'line',
+            data:[81.69, 48.59, 35.07, 36.83, 29.13, 4.46]
+        },
+        {
+            name:'男婴',
+            type:'line',
+            data:[89.24, 54.24, 36.96, 32.19, 20.85, 4.47]
+        },
+
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    <br>
+    <br>
+    
+	<div>
+		<hr class="hr2">
+		<p class="p2">数据来源：中国卫生统计 2013年《中 国 婴 儿 死 亡 率 性 别 比 的 地 域 差 异》<br>中国国家统计局第六次全国人口普查<br>注意：数据图中的1960年为1960 ～ 1964年统计的平均值、1970年为1970 ～ 1974年统计的平均值</p>
+	</div>
+	
+	<br>
+	<br>
+	<div>
+		<p class="p1">好在董小姐的父母思想不是特别保守，她平安地生活到了上学的年级，但是天真烂漫的童年，真的像歌里唱的那样阳光明媚、无忧无虑吗？</p>
+	</div>
+	<br>
+	<br>
+</div>
+   
+    </div>
+    
+<!--学生-->
+    <div class="fixed_bg bg_4"></div>
+    
+    <div class="scroll_bg color_4">
+    	<div id="part3">
+	<div>
+	<br>
+	<br>
+	<br>
+		<hr class="hr1">
+		<h2>学生时期</h2>
+		<hr class="hr1">
+	<br>
+	<br>
+	</div>
+	<p class="p1">地狱空荡荡，魔鬼在人间。董小姐的生活环境周围越来越多性侵事件被曝光。</p>
+	<br>
+	<br>
+	 <h3>媒体公开报道的性侵儿童（14岁以下）案件<span class="span1">（单位：起）</span></h3>
+	<div id="main1" style="width: 1200px;height: 600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main1'));
+
+        // 指定图表的配置项和数据
+        option = {
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['']
+    },
+    toolbox: {
+        show : true,
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['2013年', '2014年', '2015年', '2016年', '2017年']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'性侵案件',
+            type:'bar',
+            data:[125, 503, 340, 433, 378],
+            
+        },
+        
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    <br>
+     <h3>媒体公开报道的性侵儿童（14岁以下）案件中男女比例<span class="span1">（单位：人）</span></h3>
+    <div id="main1-1" style="width: 1200px;height: 500px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main1-1'));
+
+        // 指定图表的配置项和数据
+		option = {
+    title : {
+        text: '',
+        
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['','']
+    },
+    series : [
+        {
+            name: '儿童性侵比例',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:548, name:'女生'},
+                {value:58, name:'男生'}
+                
+            ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+		
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    <div>
+    	<hr class="hr2">
+		<p class="p2">数据来源：“女童保护”2017年性侵儿童案例统计及儿童防性侵教育调查报告</p>
+    </div>
+    <br>
+    <br>
+    <div>
+    	<p class="p1">幸运的是，董小姐并没有在小学里遭到伤害，并顺利升入中学。在中学里人人都说男生的理科比女生的好,“男孩子数学思维好，女孩子学语文好。”“女孩子细心、会背书，男孩子有创造力。”。这些谣言在选科的时候影响到了董小姐，她放弃了自己喜欢的理科，选择了文科。</p>
+    </div>
+    <br>
+    <br>
+    <div>
+    	<p class="p1">高考结束后，董小姐的第一志愿不幸落空，掉到了一所二本大学读管理专业。大学里的学业轻松，她在图书馆里迷上了社会学，当她啃过了数十本社会学的经典作品，她决定要报考社会学专业研究生。但是家里人却希望她......</p>
+    	<div id="img2">
+    	<img src="img/tu4.png" width="350px" height="300px">
+    	<img src="img/tu5.png" width="350px" height="300px">
+    	<img src="img/tu3.png" width="350px" height="300px">
+    	</div>
+    </div>
+</div>
+    </div>
+    
+<!--工作-->
+    <div class="fixed_bg bg_5"></div>
+    
+    <div class="scroll_bg color_5">
+       <div id="part4">
+    <div>
+    <br>
+    <br>
+    <br>
+		<hr class="hr1">
+		<h2>工作时期</h2>
+		<hr class="hr1">
+	</div>
+	<br>
+	<br>
+	<p class="p1">考研受挫后，董小姐听父母的话开始找工作。但是找工作并不简单,适合女性的工作并不多。</p>
+	<br>
+	<br>
+	<p class="p3">女/男从事不同产业的分布</p>
+	<div id="main3" style="width: 1100px;height:700px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main3'));
+		option = {
+			grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '1%',
+		top:'0%',
+        containLabel: true
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c}%"
+    },
+    series: [{
+        name: '女/男在不同产业的分布',
+        type: 'treemap',
+        data: [{
+            name: '通讯服务',            // First tree
+            value: 48,
+            children: [{
+                name: '通讯服务    女性',       // First leaf of first tree
+                value: 31
+            }, {
+                name: '通讯服务    男性',       // Second leaf of first tree
+                value: 17
+            }],
+            
+            
+        },
+        {
+            name: '零售、饭店和餐饮',            // First tree
+            value: 38,
+            children: [{
+                name: '零售、饭店和餐饮   女性',       // First leaf of first tree
+                value: 21
+            }, {
+                name: '零售、饭店和餐饮   男性',       // Second leaf of first tree
+                value: 17
+            }]
+        },
+        
+        {
+            name: '制造业',            // First tree
+            value: 25,
+            children: [{
+                name: '制造业   女性',       // First leaf of first tree
+                value: 13
+            }, {
+                name: '制造业   男性',       // Second leaf of first tree
+                value: 12
+            }]
+        },
+        
+        {   
+            name: '金融和商业',            // First tree
+            value: 8,
+            children: [{
+                name: '金融和商业   女性',       // First leaf of first tree
+                value: 4
+            }, {
+                name: '金融和商业   男性',       // Second leaf of first tree
+                value: 4
+            }]
+        },
+        
+        {
+            name: '电力、燃气和供水',            // First tree
+            value: 1.5,
+            children: [{
+                name: '电力、燃气和供水   女性',       // First leaf of first tree
+                value: 0.5
+            }, {
+                name: '电力、燃气和供水   男性',       // Second leaf of first tree
+                value: 1
+            }]
+        },
+        
+        {
+            name: '农业和狩猎',            // First tree
+            value: 56,
+            children: [{
+                name: '农业和狩猎   女性',       // First leaf of first tree
+                value: 27
+            }, {
+                name: '农业和狩猎   男性',       // Second leaf of first tree
+                value: 29
+            }]
+        },
+        
+        
+        {
+            name: '采矿业',            // First tree
+            value: 2.5,
+            children: [{
+                name: '采矿业  女性',       // First leaf of first tree
+                value: 0.5
+            }, {
+                name: '采矿业   男性',       // Second leaf of first tree
+                value: 2
+            }]
+        },
+        
+        
+        {
+            name: '建筑业',            // First tree
+            value: 12,
+            children: [{
+                name: '建筑业   女性',       // First leaf of first tree
+                value: 1
+            }, {
+                name: '建筑业   男性',       // Second leaf of first tree
+                value: 11
+            }]
+        },
+        
+        
+        {
+            name: '交通和电讯',            // First tree
+            value: 9,
+            children: [{
+                name: '交通和电讯   女性',       // First leaf of first tree
+                value: 2
+            }, {
+                name: '交通和电讯   男性',       // Second leaf of first tree
+                value: 7
+            }]
+        },
+        
+        
+        ]
+    }]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    <br>
+    <br>
+    
+    <div>
+    	<hr class="hr2">
+		<p class="p2">数据来源 ：WDR  2012年</p>
+   <br>
+    </div>
+    <br>
+    <p class="p1">董小姐最终只找到一份文职工作。董小姐开始工作的头几年相当努力，她用心写策划、准备PPT、写报告……总是加班，对同事和领导都很热情。但工资还是没有同期男同事的高。</p>
+    <br>
+    <br>
+    <p class="p3">2016年全职员工平均工资收入<span class="span1">（单位：美元）</span></p>
+    <div id="main12" style="width: 1100px;height:700px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main12'));
+
+option = {
+    title: {
+        text: '',
+        subtext: ''
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['女', '男']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01]
+    },
+    yAxis: {
+        type: 'category',
+        data: ['货车司机','手工劳动和物料搬运','软件开发师','食品服务','设计师','金融管理','社会工作者','保姆和管家','护士']
+    },
+    series: [
+        {
+            name: '女',
+            type: 'bar',
+            data: [630, 509, 1553, 632, 922, 1157,884,427,1143]
+        },
+        {
+            name: '男',
+            type: 'bar',
+            data: [787, 580, 1883, 853, 1269, 1670,1039,497,1261]
+        }
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    <br>
+    <br>
+    <div>
+		<hr class="hr2">
+		<p class="p2">数据来源 ：ERIC 2016年 《The Simple Truth about the Gender Pay Gap》</p>
+	</div>
+   <br>
+   <br>
+    <div>
+    	<p class="p1">在她工作三年后，董小姐终于等来了第一个升职机会。她把竞聘书交到顶头上司的办公室，上司说：“小董啊，我就知道你是个有想法的女孩，”说着把手放在她的大腿上拍了几下，就不拿开了。董小姐有点木木的，不知道该怎么办，该笑？该点头？还是……她木木地微微鞠躬，说：“谢谢领导。”起身出了办公室。
+</p>
+    	<br>
+    	<br>
+    	 <p class="p3">女性受到性骚扰的比率及来源</p>
+    	 <br>
+    	<div class="part4">
+    	<div id="main5" style="width: 600px;height:400px;"></div>
+	    <script type="text/javascript">
+var myChart = echarts.init(document.getElementById('main5'));
+var app = {};
+option = null;
+option = {
+    title : {
+        text: '女性受到性骚扰比例',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['','']
+    },
+    series : [
+        {
+            name: '女性受到性骚扰比例',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:80, name:'曾经遭受到'},
+                {value:20, name:'从没遭受过'},
+            ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+		
+		
+		</script>
+		</div>
+	
+      <div class="part4">
+       <div id="main6" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main6'));
+
+        // 指定图表的配置项和数据
+        option = {
+    title : {
+        text: '性骚扰来源百分比',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['女生','男生']
+    },
+    series : [
+        {
+            name: '性骚扰来源',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {},
+                {},
+                {value:50, name:'其他'},
+                {value:36, name:'上司'},
+                {value:14, name:'同事'},
+                
+                
+                
+            ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+	if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+	</script>
+   
+</div>
+   <br>
+   <br>
+   <br>
+    <div>
+    	<hr class="hr2">
+		<p class="p2">数据来源 ：红枫妇女心理咨询服务中心</p>
+   <br>
+    </div>
+	</div>
+	<br>
+	<p class="p1">董小姐辞职，重新找了一份工作。在新公司又工作了三年，升迁了一次。这年，董小姐28岁了，当年的大学同学许多都已经结婚，有的孩子都两三岁了。她成了人们口中的剩女。董小姐的父母也催她，于是她通过相亲认识了她现在的丈夫，拍拖不到一年便结婚了。</p>
+	</div>
+   <br>
+   <br>
+    </div>
+    
+<!--婚姻-->
+    <div class="fixed_bg bg_6"></div>
+    <div class="scroll_bg color_6">
+    	<div id="part5">
+	<div>
+	<br>
+	<br>
+	<br>
+		<hr class="hr1">
+		<h2>结婚时代</h2>
+		<hr class="hr1">
+		<br>
+		<br>
+		<p class="p1">
+结婚一年后，董小姐怀上了孩子……孩子出生……孩子还小……等孩子上了幼儿园，四年过去了，董小姐错过了两次升迁的机会和一次外派出国的机会，与她同一年进这家公司的男同事都成了部门经理了。
+</p>
+		<p class="p1">工作之余，婚后家务分工让她苦恼不已。</p>
+	</div>
+	<br>
+	<br>
+	<h3>男女家务分工情况比例<span class="span1">（单位：%）</span></h3>
+		<div id="main7" style="width: 1200px;height:600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main7'));
+		option = null;
+option = {
+    title : {
+        text: '',
+        x:'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['大部分女人做','男女各做一半','全部女人做','其他']
+    },
+    series: [
+        {
+            name:'家务分工',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:41.7, name:'大部分女人做'},
+                {value:22.2, name:'男女各做一半'},
+                {value:20.4, name:'全部女人做'},
+                {value:15.7, name:'其他'},
+            ]
+        }
+    ]
+};	
+			
+	if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+			
+  </script>	
+  
+    <div>
+    	<hr class="hr2">
+		<p class="p2">数据来源 ：新加坡国立大学 2012年《升至高层：亚洲女性领导力》</p>
+    </div>
+    <br>
+    <br>
+        <div>
+    	<p class="p1">虽然工作升迁不尽如人意，丈夫在家务和带孩子上基本不帮忙，但除了偶尔吵架，董小姐和她的丈夫相处得也总算和睦。幸免于许多已婚中国女性遭受过的家庭暴力。</p>
+    	<br>
+    	<br>
+    	<div class="part4">
+    	<div id="main8" style="width: 600px;height:500px;"></div>
+	    <script type="text/javascript">
+var myChart = echarts.init(document.getElementById('main8'));
+var app = {};
+option = null;
+option = {
+	  title : {
+        text: '全国遭受家暴的家庭(其中施暴者90%为男性)',
+        x:'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['存在家暴','不存在家暴',]
+    },
+    series: [
+        {
+            name:'家暴情况',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:75000000, name:'存在家暴'},
+                {value:175000000, name:'不存在家暴'},
+            ]
+        }
+    ]
+};
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+		
+		
+		</script>
+		</div>
+	
+      <div class="part4">
+       <div id="main9" style="width: 600px;height:500px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main9'));
+
+        // 指定图表的配置项和数据
+        option = null;
+option = {
+	  title : {
+        text: '遭受家暴的女性的全国比例（单位：%）',
+        x:'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['遭受家暴','未遭受家暴',]
+    },
+    series: [
+        {
+            name:'家暴情况',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:24.7, name:'遭受家暴'},
+                {value:75.3, name:'未遭受家暴'},
+            ]
+        }
+    ]
+};
+	if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+	</script>
+   
+</div>
+   
+    <div>
+    	<hr class="hr2">
+		<p class="p2">数据来源 ：2011年 全国妇联和国家统计局 第三期中国妇女社会地位调查</p>
+    </div>
+	</div>
+	<br>
+	<br>
+	<div>
+		<p class="p1">董小姐成为了一个好妻子，和老公平静的生活了下去，度过了了七年之痒，避免了离婚。</p>
+       <br>
+       <br>
+        <h3>中国离婚率<span class="span1">（单位：%）</span></h3>
+         <div id="part4_4" style="width: 1200px;height:500px;"></div>
+		<script type="text/javascript">
+var myChart = echarts.init(document.getElementById('part4_4'));
+var app = {};
+option = {
+    title: {
+        text: ''
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2007年',
+        '2008年','2009年','2010年','2011年','2012年','2013年','2014年','2015年','2016年']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name:'离婚率',
+            type:'line',
+            stack: '总量',
+            data:[ 1.6,1.7,1.9,2.0,
+        2.1,2.3,2.6,2.7,2.8,3.0]
+        }
+    ]
+};
+
+			
+	if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}	
+		
+		</script> 
+       <br>
+       <br>
+       
+    <div>
+		<hr class="hr2">
+		<p class="p2">中商产业研究院大数据</p>
+	</div>  
+       <br><br><br>   	
+        </div>
+	</div>
+	
+</div>
+    
+<!--退休-->
+    <div class="fixed_bg bg_7"></div>
+    <div class="scroll_bg color_7">
+        <div id="part6">
+	<div>
+	<br>
+	<br>
+		<hr class="hr1">
+		<h2>退休后</h2>
+		<hr class="hr1">
+		<br>
+		<br>
+		<p class="p1">为孩子、家庭和工作操劳的时间总是过得很快，董小姐转眼就到了要退休的年纪，虽然她觉得自己还精力充沛。而她的丈夫虽然身体状况远不如她，但他还有几年才退休呢。</p>
+	</div>
+	
+	<br>
+	<div id="main10" style="width: 1100px;height:700px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main10'));
+	app.title = '';
+
+option = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data:['女', '差异', '男']
+    },
+    grid: {
+        top: '10%',
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    yAxis : [
+        {
+            type : 'category',
+            axisTick : {show: false},
+            data : ['平均工资','退休年龄（单位：岁）','平均寿命（单位：年）']
+        }
+    ],
+    series : [
+        {
+            name:'女',
+            type:'bar',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'inside'
+                }
+            },
+            data:[85, 50, 79.43]
+        },
+        {
+            name:'男',
+            type:'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true
+                }
+            },
+            data:[100, 60, 73.64]
+        },
+        {
+            name:'差异',
+            type:'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'left'
+                }
+            },
+            data:[-15, -10, 5.79]
+        }
+    ]
+};
+		 // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+     <div>
+    	<hr class="hr2">
+		<p class="p2">数据来源：国家统计局<br>注意：我们将男性的平均工资假设为100元，女性对应的是男性的85%则为85元。两者相差15%。</p>
+   <br>
+   <br>
+    </div>
+</div>
+    </div>
+    
+<!--尾页-->
+    <div class="fixed_bg bg_8"></div>
+    <div class="scroll_bg color_8">
+    	<div id="weibu">
+	<footer>
+		<div class="footer1">
+		<br>
+			参赛成员：<br>
+			李&nbsp;&nbsp;&nbsp;雯（西华师范大学）<br>
+			刘紫荆（西华师范大学）<br>
+			陈梦茜（西华师范大学）<br>
+			董鸿霖（西华师范大学）<br>
+			<br>
+			指导老师：<br>
+			陈昱廷（西华师范大学）
+			<br>
+			<br>
+			文案:<br>
+			借鉴豆瓣女权之声《董小姐的故事》，在此表示感谢。
+		</div>
+	</footer>
+</div>
+    </div>
+</main>
+
+</body>
+</html>
